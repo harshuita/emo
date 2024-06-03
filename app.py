@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template,request
 from transformers import pipeline
 app = Flask(__name__)
 sentiment_analysis = pipeline('sentiment-analysis')
