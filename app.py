@@ -7,10 +7,10 @@ def home():
    return render_template('index.html')
 @app.route('/result', methods=['POST','GET'])
 def result():
-    if request.method == 'POST':
-        text = request.form['text']
-        results = sentiment_analysis(text)
-        sentiment = results[0]['label']
+   if request.method == 'POST':
+      text = request.form['inp']
+      results = sentiment_analysis(text)
+      sentiment = results[0]['label']
    return render_template('result.html')
 if __name__ == '__main__':
    app.run()
