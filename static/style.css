@@ -29,7 +29,7 @@ button {
     width:75px;
     height:30px;
     color:white;
-    margin-top: 3.5px;
+    margin-top: 40px;
 }
 button:hover {
     background: linear-gradient(90deg, #ffdde1,#ee9ca7);
