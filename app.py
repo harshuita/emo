@@ -1,5 +1,10 @@
 from flask import Flask, render_template,request
 from emo_detect import detect_emotion
+import pandas as pd
+import sqlite3
+df=pd.read_csv('main.csv')
+conn=sqlite3.connect('lyric_emotion.db')
+#df.to_sql('main',conn,if_exists='replace',index=False) 
 app = Flask(__name__)
 @app.route('/')
 def home():
